@@ -1,0 +1,14 @@
+@media print {
+    .no-print {
+      display: none !important;
+    }
+  
+    .print-table {
+      display: block;
+    }
+  
+    body {
+      margin: 0;
+    }
+  }
+  

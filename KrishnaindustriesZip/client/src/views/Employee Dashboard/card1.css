@@ -1,0 +1,158 @@
+/* CustomerCard.css */
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .cust-card1 {
+    background: linear-gradient(27deg, #f0f4ff, #2d89a0, #f0f4ff); /* Gradient colors */
+    background-size: 300% 300%; /* Allow for smooth animation */
+    animation: gradientAnimation 8s ease infinite; /* Animation duration and effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    height: 20vh;
+    transition: transform 0.3s ease;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cust-card2 {
+    background: linear-gradient(325deg, #f0f4ff, #288edd, #f0f4ff);
+    background-size: 300% 300%; /* Allow for smooth animation */
+    animation: gradientAnimation 8s ease infinite; /* Animation duration and effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    height: 20vh;
+    transition: transform 0.3s ease;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cust-card3 {
+    background: linear-gradient(30deg, #f0f4ff, #5461a9, #f0f4ff); /* Variant 4 */
+    background-size: 300% 300%; /* Allow for smooth animation */
+    animation: gradientAnimation 8s ease infinite; /* Animation duration and effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    height: 20vh;
+    transition: transform 0.3s ease;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Indicate that the card is clickable */
+  }
+
+  .cust-card4 {
+    background: linear-gradient(325deg, #f0f4ff, #a7c6ed, #f0f4ff);
+    background-size: 300% 300%; /* Allow for smooth animation */
+    animation: gradientAnimation 8s ease infinite; /* Animation duration and effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    height: 20vh;
+    transition: transform 0.3s ease;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Indicate that the card is clickable */
+  }
+  .cust-card5 {
+    background: linear-gradient(50deg, #f0f4ff, #ce93d8, #f0f4ff);
+    background-size: 300% 300%; /* Allow for smooth animation */
+    animation: gradientAnimation 8s ease infinite; /* Animation duration and effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px;
+    height: 25vh;
+    transition: transform 0.3s ease;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Indicate that the card is clickable */
+  }
+  .cust-card1.cust-card2.cust-card3.cust-card4:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+  
+  .cust-card-heading {
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .cust-value {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .cust-icon {
+    font-size: 50px;
+    color: #ffffff;
+    transition: transform 0.3s;
+  }
+  
+  .cust-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* New styles for loading effect */
+  .loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .loading-spinner {
+    color: #ffffff; /* Change spinner color */
+    animation: pulse 1.5s infinite; /* Pulsing effect */
+    margin-right: 10px; /* Spacing between spinner and text */
+  }
+  
+  .loading-text {
+    color: #ffffff; /* White color for loading text */
+    animation: fade-in-out 1s infinite; /* Fade effect */
+  }
+  
+  /* Keyframe animation for fade in and out */
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

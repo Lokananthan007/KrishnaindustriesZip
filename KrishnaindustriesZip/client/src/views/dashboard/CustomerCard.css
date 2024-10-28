@@ -1,0 +1,99 @@
+/* CustomerCard.css */
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cust-card {
+  background: linear-gradient(45deg, #3f87a6, #ebf8e1);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cust-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.cust-card-heading {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.cust-value {
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cust-icon {
+  font-size: 50px;
+  color: #ffffff;
+  transition: transform 0.3s;
+}
+
+.cust-icon:hover {
+  transform: scale(1.1);
+}
+
+/* New styles for loading effect */
+.loading-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Spacing above */
+}
+
+.loading-spinner {
+  color: #ffffff; /* Change spinner color */
+  animation: pulse 1.5s infinite; /* Pulsing effect */
+  margin-right: 10px; /* Spacing between spinner and text */
+}
+
+.loading-text {
+  color: #ffffff; /* White color for loading text */
+  animation: fade-in-out 1s infinite; /* Fade effect */
+}
+
+/* Keyframe animation for fade in and out */
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

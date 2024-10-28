@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+  }
+  
+  .footer-left {
+    flex: 1;
+    text-align: left;
+    margin-left: 20em;
+  }
+  
+  .footer-right {
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+  }
+  

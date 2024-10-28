@@ -1,0 +1,68 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.styled-emp-card {
+  background: linear-gradient(270deg, #f0f4ff, #a7c6ed, #f0f4ff); /* Gradient colors */
+  background-size: 300% 300%; /* Allow for smooth animation */
+  animation: gradientAnimation 8s ease infinite; /* Animation duration and effect */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.styled-emp-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.styled-emp-card-heading {
+  font-weight: bold;
+  color: #3f51b5; /* Primary color */
+}
+
+.styled-emp-value {
+  font-weight: bold;
+  color: #000; /* Text color */
+  margin-top: 10px; /* Spacing above */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.styled-emp-icon {
+  font-size: 50px; /* Icon size */
+  color: #3f51b5; /* Icon color */
+  transition: transform 0.2s; /* Transition effect */
+}
+
+.styled-emp-icon:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Updated styles for loading effect */
+.loading-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Spacing above */
+}
+
+.loading-spinner {
+  color: #3f51b5; /* Match spinner color with primary theme */
+  margin-right: 10px; /* Spacing between spinner and text */
+}
+
+.loading-text {
+  color: #3f51b5; /* Match text color with primary theme */
+  font-weight: 500;
+}

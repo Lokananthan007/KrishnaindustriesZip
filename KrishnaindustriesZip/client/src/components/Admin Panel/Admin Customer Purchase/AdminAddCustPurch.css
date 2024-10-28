@@ -1,0 +1,17 @@
+/* AdminAddCustPurch.css */
+.dark-navy-blue {
+    color: #001f3f; /* Dark Navy Blue */
+  }
+  
+  .gold {
+    color: #ffd700; /* Gold */
+  }
+  
+  .submit-button {
+    background-color: #001f3f; /* Dark Navy Blue */
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #004080; /* Slightly lighter navy blue for hover effect */
+  }

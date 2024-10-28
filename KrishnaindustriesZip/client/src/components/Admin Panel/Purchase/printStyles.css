@@ -1,0 +1,15 @@
+/* Print-specific styles */
+@media print {
+    /* Table head background color */
+    th {
+      background-color: black;
+      color: white;
+      border: 1px solid #ddd;
+    }
+  
+    /* Table cell border */
+    td {
+      border: 1px solid #ddd;
+    }
+  }
+  
